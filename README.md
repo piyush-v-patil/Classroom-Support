@@ -25,7 +25,7 @@ Administrators have the ability to edit the existing troubleshooting tutorials o
 
 **How to log in:**
 1. Click the lock icon 🔒 (**Admin Login**) at the top right of the page.
-2. Enter the administrator password (by default, this is `uncc-av-2024` but it can be changed in the first line of the `app.js` file).
+2. Enter the administrator password (by default, this is `espresso` but it can be changed in the first line of the `app.js` file).
 3. You will see a green badge appear confirming you have Admin access.
 
 **Adding or Editing Issues:**
