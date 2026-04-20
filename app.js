@@ -1,4 +1,4 @@
-const ADMIN_PASSWORD = "uncc-av-2024"; // ← change this
+const ADMIN_PASSWORD = "espresso"; // ← change this
 
     // ── State ──────────────────────────────────────────────────────────────────
     let isAdmin = false;
