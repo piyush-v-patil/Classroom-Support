@@ -231,7 +231,7 @@ const ADMIN_PASSWORD = "espresso"; // ← change this
             });
             bodyHtml += `</div></div>`;
           });
-          html += `<div class="icard" id="ic${iss.id}">
+          html += `<div class="icard" id="ic${iss.id}" style="border-left:3px solid ${tc.c}">
         <div class="icard-top" onclick="togCard('${iss.id}')">
           <span class="icard-num">${String(idx + 1).padStart(2, '0')}</span>
           <span class="icard-title">${iss.title || 'Untitled'}</span>
@@ -337,8 +337,13 @@ const ADMIN_PASSWORD = "espresso"; // ← change this
 
     // ── REVEAL ────────────────────────────────────────────────────────────────────
     function checkReveal() {
-      document.querySelectorAll('.reveal').forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight - 50) el.classList.add('vis');
+      let delay = 0;
+      document.querySelectorAll('.reveal:not(.vis)').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+          el.style.transitionDelay = `${delay}ms`;
+          el.classList.add('vis');
+          delay += 120;
+        }
       });
     }
     window.addEventListener('scroll', checkReveal);
