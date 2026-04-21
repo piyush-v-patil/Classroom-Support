@@ -468,6 +468,123 @@
       font-weight: 500;
     }
 
+    /* ── QUICK ACCESS ── */
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .qa-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      color: var(--tx3);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .qa-label-line {
+      flex: 1;
+      height: 1px;
+      background: var(--br);
+    }
+
+    .qa-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      max-width: 340px;
+    }
+
+    .qa-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 9px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      border-left-width: 2px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s, filter .18s;
+    }
+
+    .qa-btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .qa-icon {
+      font-size: 12px;
+      flex-shrink: 0;
+      line-height: 1;
+      opacity: 0.8;
+    }
+
+    .qa-text {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .qa-name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .qa-sub {
+      font-family: 'DM Mono', monospace;
+      font-size: 8px;
+      letter-spacing: .3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      opacity: 0.5;
+    }
+
+    .qa-arrow {
+      font-size: 9px;
+      flex-shrink: 0;
+      opacity: 0;
+      transition: opacity .15s, transform .15s;
+    }
+
+    .qa-btn:hover .qa-arrow {
+      opacity: 0.7;
+      transform: translate(1px, -1px);
+    }
+
+    /* ── Extron — steel blue (matches --ac) */
+    .qa-extron {
+      background: rgba(74, 127, 165, 0.13);
+      border-color: rgba(111, 163, 200, 0.35);
+      border-left-color: #6FA3C8;
+    }
+
+    /* All quick-access buttons share the same --ac accent */
+    .qa-extron .qa-name, .qa-crestron .qa-name,
+    .qa-25live .qa-name, .qa-ticket .qa-name  { color: var(--tx); }
+    .qa-extron .qa-sub,  .qa-crestron .qa-sub,
+    .qa-25live .qa-sub,  .qa-ticket .qa-sub   { color: var(--ac); }
+    .qa-extron .qa-arrow, .qa-crestron .qa-arrow,
+    .qa-25live .qa-arrow, .qa-ticket .qa-arrow { color: var(--ac); }
+
+    .qa-crestron, .qa-25live, .qa-ticket {
+      background: rgba(74, 127, 165, 0.13);
+      border-color: rgba(111, 163, 200, 0.35);
+      border-left-color: #6FA3C8;
+    }
+
     /* ── SECTION HDR ── */
     .sec-hdr {
       display: flex;

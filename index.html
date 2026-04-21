@@ -139,25 +139,44 @@
   <!-- EMERGENCY MODAL -->
   <div class="modal-overlay" id="emergency-modal" onclick="closeEmergency()">
     <div class="modal" onclick="event.stopPropagation()" style="max-width: 600px; border-top: 4px solid var(--red);">
-      <div class="confirm-title" style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 0;">
+      <div class="confirm-title"
+        style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 0;">
         <span>🚨 Emergency Call Response Procedure</span>
-        <button class="zoom-close-btn" style="position: relative; top: -4px; right: -4px;" onclick="closeEmergency()">×</button>
+        <button class="zoom-close-btn" style="position: relative; top: -4px; right: -4px;"
+          onclick="closeEmergency()">×</button>
       </div>
       <div class="confirm-msg" style="color: var(--tx2); margin-top: 16px; margin-bottom: 0;">
-        <p style="margin-bottom: 12px; color: var(--tx1);">The intercom in a classroom is primarily used for technical assistance, but it may also be used to notify Classroom Support of an emergency.</p>
-        
-        <div style="background: rgba(192, 57, 43, 0.1); border-left: 3px solid var(--red); padding: 12px; border-radius: 4px; margin-bottom: 16px;">
-          <strong style="color: var(--red);">Critical:</strong> When an instructor calls with an emergency, we must connect them to campus police as quickly as possible.
+        <p style="margin-bottom: 12px; color: var(--tx1);">The intercom in a classroom is primarily used for technical
+          assistance, but it may also be used to notify Classroom Support of an emergency.</p>
+
+        <div
+          style="background: rgba(192, 57, 43, 0.1); border-left: 3px solid var(--red); padding: 12px; border-radius: 4px; margin-bottom: 16px;">
+          <strong style="color: var(--red);">Critical:</strong> When an instructor calls with an emergency, we must
+          connect them to campus police as quickly as possible.
         </div>
 
         <strong style="color: var(--tx1); font-size: 14px;">How to Handle an Emergency Call</strong>
-        <ol style="margin-top: 10px; margin-left: 18px; padding-left: 0; display: flex; flex-direction: column; gap: 12px;">
-          <li>If you answer a call over the intercom and learn that there is an emergency, respond over the intercom by saying: <br><strong style="color: #fff">“A call to 911 is being placed, and 911 will be speaking with you over the intercom shortly.”</strong></li>
-          <li>From our office phone, dial <strong style="color: var(--ac)">7-2200</strong>. This will connect you directly to campus police.</li>
-          <li>When the police answer, say: <br><strong style="color: #fff">“This is Classroom Support; there is an emergency. Please pick up the intercom in [building and room number]. Please let me know when you are ready to pick up the intercom.”</strong><br><span style="color: var(--tx3); font-size: 11px;">(This message can be found on the phone in our office)</span></li>
-          <li>Dispatch will use its own TalkMaster console to connect to the intercom in the classroom. Dispatch will acknowledge that they are ready to pick up the intercom.</li>
-          <li>Once dispatch is ready, <strong style="color: var(--red)">end the intercom call</strong> with the classroom in your TalkMaster console. <strong style="color: var(--tx1)">Remain on the line with 911 until the call is terminated.</strong> Look at the TalkMaster console to see if the status of the room changes to <em style="color: var(--ac)">listening</em>, which indicates that 911 is connected to the room.</li>
-          <li>Lastly, send an email to <a href="mailto:lst-staff-group@charlotte.edu" style="color: var(--ac); text-decoration: none;">lst-staff-group@charlotte.edu</a>. In this email, include a description of the call, the building, and the room number of the emergency, and any other relevant details.</li>
+        <ol
+          style="margin-top: 10px; margin-left: 18px; padding-left: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li>If you answer a call over the intercom and learn that there is an emergency, respond over the intercom by
+            saying: <br><strong style="color: #fff">“A call to 911 is being placed, and 911 will be speaking with you
+              over the intercom shortly.”</strong></li>
+          <li>From our office phone, dial <strong style="color: var(--ac)">7-2200</strong>. This will connect you
+            directly to campus police.</li>
+          <li>When the police answer, say: <br><strong style="color: #fff">“This is Classroom Support; there is an
+              emergency. Please pick up the intercom in [building and room number]. Please let me know when you are
+              ready to pick up the intercom.”</strong><br><span style="color: var(--tx3); font-size: 11px;">(This
+              message can be found on the phone in our office)</span></li>
+          <li>Dispatch will use its own TalkMaster console to connect to the intercom in the classroom. Dispatch will
+            acknowledge that they are ready to pick up the intercom.</li>
+          <li>Once dispatch is ready, <strong style="color: var(--red)">end the intercom call</strong> with the
+            classroom in your TalkMaster console. <strong style="color: var(--tx1)">Remain on the line with 911 until
+              the call is terminated.</strong> Look at the TalkMaster console to see if the status of the room changes
+            to <em style="color: var(--ac)">listening</em>, which indicates that 911 is connected to the room.</li>
+          <li>Lastly, send an email to <a href="mailto:lst-staff-group@charlotte.edu"
+              style="color: var(--ac); text-decoration: none;">lst-staff-group@charlotte.edu</a>. In this email, include
+            a description of the call, the building, and the room number of the emergency, and any other relevant
+            details.</li>
         </ol>
       </div>
     </div>
@@ -175,8 +194,46 @@
     <div class="hero reveal">
       <div class="hero-left">
         <h1>Single Display<br><em>Classroom Standard</em></h1>
+        <!-- QUICK ACCESS LINKS -->
+        <div class="qa-grid">
+          <a href="http://www.gve.uncc.edu/GVE/HelpDesk/HelpDesk.aspx" target="_blank" rel="noopener"
+            class="qa-btn qa-extron">
+            <span class="qa-icon">🎛</span>
+            <span class="qa-text">
+              <span class="qa-name">Extron</span>
+              <span class="qa-sub">GlobalViewer</span>
+            </span>
+            <span class="qa-arrow">↗</span>
+          </a>
+          <a href="https://cf.charlotte.edu/fusion/weblaunch" target="_blank" rel="noopener" class="qa-btn qa-crestron">
+            <span class="qa-icon">🖥</span>
+            <span class="qa-text">
+              <span class="qa-name">Crestron</span>
+              <span class="qa-sub">Fusion Login</span>
+            </span>
+            <span class="qa-arrow">↗</span>
+          </a>
+          <a href="https://25live.collegenet.com/pro/uncc#!/home/dash" target="_blank" rel="noopener"
+            class="qa-btn qa-25live">
+            <span class="qa-icon">📅</span>
+            <span class="qa-text">
+              <span class="qa-name">25Live</span>
+              <span class="qa-sub">Room Scheduling</span>
+            </span>
+            <span class="qa-arrow">↗</span>
+          </a>
+          <a href="https://services.help.charlotte.edu/TDWorkManagement/" target="_blank" rel="noopener"
+            class="qa-btn qa-ticket">
+            <span class="qa-icon">🎫</span>
+            <span class="qa-text">
+              <span class="qa-name">Ticket Management</span>
+              <span class="qa-sub">IT Service Management</span>
+            </span>
+            <span class="qa-arrow">↗</span>
+          </a>
+        </div>
       </div>
-      
+
       <div class="hero-contacts">
         <div class="hc-title">Important Numbers</div>
         <div class="hc-grid">
@@ -205,19 +262,24 @@
             <strong>1-877-257-9780</strong>
           </div>
         </div>
-        <button class="btn btn-danger" style="width: 100%; margin-top: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; letter-spacing: 0.5px;" onclick="openEmergency()">
+        <button class="btn btn-danger"
+          style="width: 100%; margin-top: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; letter-spacing: 0.5px;"
+          onclick="openEmergency()">
           🚨 EMERGENCY PROCEDURE
         </button>
       </div>
     </div>
+
 
     <!-- ISSUES -->
     <div id="issues" class="reveal">
       <div class="sec-hdr">
         <h2>Issue Troubleshooting Guide</h2>
         <div style="display: flex; gap: 10px;">
-          <button class="add-btn" id="export-pdf-btn" onclick="exportPDF()" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);">📄 Export PDF</button>
-          <button class="add-btn" id="add-issue-btn" style="display:none" onclick="openAdd()"><span class="plus">+</span> Add Issue</button>
+          <button class="add-btn" id="export-pdf-btn" onclick="exportPDF()"
+            style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);">📄 Export PDF</button>
+          <button class="add-btn" id="add-issue-btn" style="display:none" onclick="openAdd()"><span
+              class="plus">+</span> Add Issue</button>
         </div>
       </div>
       <div class="controls">
