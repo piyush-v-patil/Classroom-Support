@@ -37,13 +37,15 @@
       scroll-behavior: smooth;
     }
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--tx);
-      min-height: 100vh;
-      font-size: 14px;
-    }
+  body {
+  font-family: 'DM Sans', sans-serif;
+  background:
+    linear-gradient(rgba(5, 10, 12, 0.65), rgba(5, 10, 12, 0.78)),
+    url("images/lst-background.png") center top / cover fixed no-repeat;
+  color: var(--tx);
+  min-height: 100vh;
+  font-size: 14px;
+}
 
     /* ── TOPBAR ── */
     .topbar {
@@ -513,7 +515,7 @@
 
     .qa-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 5px;
     }
 
@@ -1633,3 +1635,22 @@
         transform: none !important;
       }
     }
+/* Azure Guide */
+.qa-azure {
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.qa-azure .qa-name,
+.qa-azure .qa-sub,
+.qa-azure .qa-arrow {
+  color: #ffffff;
+}
+
+.qa-azure:hover {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
