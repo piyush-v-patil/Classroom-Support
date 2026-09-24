@@ -37,15 +37,13 @@
       scroll-behavior: smooth;
     }
 
-  body {
-  font-family: 'DM Sans', sans-serif;
-  background:
-    linear-gradient(rgba(5, 10, 12, 0.65), rgba(5, 10, 12, 0.78)),
-    url("images/lst-background.png") center top / cover fixed no-repeat;
-  color: var(--tx);
-  min-height: 100vh;
-  font-size: 14px;
-}
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--tx);
+      min-height: 100vh;
+      font-size: 14px;
+    }
 
     /* ── TOPBAR ── */
     .topbar {
@@ -515,7 +513,7 @@
 
     .qa-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 5px;
     }
 
@@ -618,6 +616,15 @@
     }
     .qa-ticket .qa-name { color: var(--tx); }
     .qa-ticket .qa-sub, .qa-ticket .qa-arrow { color: var(--purple); }
+
+    /* ── Recast PAM — green */
+    .qa-recast {
+      background: rgba(39, 147, 79, 0.13);
+      border-color: rgba(39, 147, 79, 0.35);
+      border-left-color: var(--green);
+    }
+    .qa-recast .qa-name { color: var(--tx); }
+    .qa-recast .qa-sub, .qa-recast .qa-arrow { color: var(--green); }
 
     /* ── SECTION HDR ── */
     .sec-hdr {
